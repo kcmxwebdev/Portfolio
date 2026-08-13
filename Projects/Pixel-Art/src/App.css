@@ -1,0 +1,19 @@
+main {
+    flex: 1;
+    height: 100%;
+}
+
+#load-button {
+    display: none;
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 5px;
+  color: var(--text);
+  padding: 0;
+}
+
+footer {
+  border-bottom: 1px solid var(--border);
+}

@@ -1,0 +1,93 @@
+body {
+    background-color: #F7F8F0;
+    color: #355872;
+    margin: 0;
+    padding-top: 100px;
+}
+
+.navbar {
+    width: 50%;
+    margin: 20px auto 20px auto;
+}
+
+.navbar a {
+    display: block;
+    text-decoration: none;
+    font-size: 3em;
+    border-radius: 15px;
+    padding: 0;
+    width: 100%;
+}
+
+.navbar a:hover, .navbar a:focus {
+    background-color: gray;
+}
+
+.navbar ul {
+    display: grid;
+    list-style-type: none;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0;
+    text-align: center;
+}
+
+#education {
+    width: 400px;
+    text-align: center;
+    font-size: 1.25em;
+    display: inline-block;
+}
+
+#education p{
+    margin: 10px 0px 0px 0px;
+}
+
+#skills {
+    width: 400px;
+    text-align: center;
+    font-size: 1.25em;
+    display: inline-block;
+}
+
+#skills ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#skills li {
+    text-align: center;
+}
+
+#information {
+    display: grid;
+    justify-items: center;
+    margin: 0 auto;
+    width: 80%;
+}
+
+#about-me {
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2 {
+    border-bottom: 2px solid #355872;
+    font-size: 2em;
+    margin: 0px;
+    text-align: center;
+}
+
+#display {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 50%;
+    margin: 20px auto 0 auto;
+}
+
+.info {
+    margin: 25px 0 25px 0;
+}

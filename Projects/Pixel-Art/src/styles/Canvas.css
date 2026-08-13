@@ -1,0 +1,55 @@
+
+#canvas-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 100px auto;
+    width: 640px;
+    height: 640px;
+    box-sizing: border-box;
+    outline: 2px solid black;
+    overflow: hidden;
+    @media (max-width: 768px) {
+        width: 320px;
+        height: 320px;
+    }
+}
+
+#canvas-container canvas {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#cursor {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: transparent;
+    z-index: 2;
+    pointer-events: none;
+    border: 2px soild black;
+
+}
+
+
+#visual-canvas {
+    background-color: white;
+    width: 640px;
+    height: 640px;
+    image-rendering: pixelated;
+    pointer-events: none;
+    z-index: 0;
+    @media (prefers-color-scheme: dark) {
+        background-color: white;
+    }
+}
+
+#interact-canvas {
+    background-color: transparent;
+    width: 640px;
+    height: 640px;
+    image-rendering: pixelated;
+    z-index: 1;
+}

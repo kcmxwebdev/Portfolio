@@ -1,0 +1,86 @@
+input[type=file] {
+    display: none;
+}
+
+#settings-container {
+    display: flex;
+    /* justify-content: center; */
+    align-items: top;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    z-index: 1;
+    @media (max-width: 768px) {
+        width: 320px;
+        height: 320px;
+    }
+}
+
+select {
+    padding: 0;
+}
+
+option {
+    padding: 0;
+}
+
+.dropdown {
+    text-align: center;
+}
+
+.setting-button:focus option:first-of-type {
+    display: none;
+}
+
+#custom-file-upload {
+    display: inline-block;
+    cursor: pointer;
+}
+
+#pixel-size {
+    display: flex;
+    cursor: default;
+}
+
+#size-input {
+    width: 50px;
+    @media (max-width: 768px) {
+        width: 30px;
+    }
+}
+
+
+#size-label {
+    white-space: nowrap;
+    text-align: center;
+    margin: 0 10px;
+    @media (max-width: 768px) {
+        width: 50px;    
+    }
+}
+
+.setting-button {
+    cursor: pointer;
+    font-size: 16px;
+    appearance: auto;
+    height: 30px;
+    text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: buttonface;
+    margin: 0em 0em 0em 0em;
+    /* padding-block: 1px;
+    padding-inline: 8px; */
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: none;
+}

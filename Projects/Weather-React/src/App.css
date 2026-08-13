@@ -1,0 +1,20 @@
+body {
+  display: flex;
+  flex-direction: column;
+  zoom: 150%;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  border-bottom: 1px solid var(--border);
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 5px;
+  color: var(--text);
+  padding: 0;
+}

@@ -1,0 +1,15 @@
+.search-option {
+    display: block;
+    border-radius: 5px;
+    width: 90%;
+    justify-content: center;
+    padding: 3px 0;
+    border: none;
+    background-color: var(--option-bg);
+}
+
+.search-option:hover,
+.search-option:focus {
+    background-color: var(--search-option-bg);
+    outline: none;
+}

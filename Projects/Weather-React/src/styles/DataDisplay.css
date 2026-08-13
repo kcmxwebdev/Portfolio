@@ -1,0 +1,108 @@
+.data-display-component {
+    color: var(--text-h);
+    width: 80%;
+    margin: 15px auto 0 auto;
+}
+
+
+.data-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+        "Temperature Feels-Like"
+        "Time Precipitation"
+        "Humidity Wind-Speed"
+    ;
+    margin-top: 5px;
+    @media (max-width: 400px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas:
+            "Temperature"
+            "Feels-Like"
+            "Time"
+            "Precipitation"
+            "Humidity"
+            "Wind-Speed"
+        ;
+    }
+}
+
+.data-info p {
+    border: 1px solid var(--search-border);
+    padding: 0 5px;
+}
+
+#temperature-2m,
+#current-time,
+#humidity {
+    border-left-width: 1.5px;
+    @media (max-width: 400px) {
+        border-right-width: 1.5px;
+    }
+}
+
+#apparent-temperature,
+#precipitation,
+#wind-speed {
+    border-right-width: 1.5px;
+    @media (max-width: 400px) {
+        border-left-width: 1.5px;
+    }
+}
+
+#temperature-2m,
+#apparent-temperature {
+    border-top-width: 1.5px;
+}
+
+#humidity,
+#wind-speed {
+    border-bottom-width: 1.5px;
+}
+
+#temperature-2m {
+    border-top-left-radius: 10px;
+    grid-area: Temperature;
+    @media (max-width: 400px) {
+        border-top-right-radius: 10px;
+        border-bottom-width: 1px;
+        
+    }
+}
+
+#apparent-temperature {
+    border-top-right-radius: 10px;
+    grid-area: Feels-Like;
+    @media (max-width: 400px) {
+        border-top-right-radius: 0;
+        border-top-width: 1px;
+    }
+}
+
+#humidity {
+    border-bottom-left-radius: 10px;
+    grid-area: Humidity;
+    @media (max-width: 400px) {
+        border-bottom-left-radius: 0;
+        border-bottom-width: 1px;
+    }
+    
+}
+
+#wind-speed {
+    border-bottom-right-radius: 10px;
+    grid-area: Wind-Speed;
+    @media (max-width: 400px) {
+        border-bottom-left-radius: 10px;
+    }
+}
+
+#current-time {
+    grid-area: Time;
+}
+
+#precipitation {
+    grid-area: Precipitation;
+}
