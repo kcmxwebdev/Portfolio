@@ -1,3 +1,7 @@
+main {
+    padding: 0 5%;
+}
+
 body {
     background-color: white;
     color: black;
@@ -6,36 +10,48 @@ body {
 }
 
 #education {
-    width: 400px;
-    text-align: center;
     font-size: 18px;
-    display: inline-block;
+}
+
+#education p {
+    display: block;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+#graduation-date {
+    float: right;
+}
+
+#major {
+    display: block;
 }
 
 #skills {
-    width: 400px;
     text-align: center;
     font-size: 18px;
     display: inline-block;
 }
 
-#skills ul{
+#skills ul {
     list-style-type: none;
     padding: 0;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 100px);
     justify-content: center;
     gap: 20px;
 }
 
 #skills li {
     text-align: center;
+    padding-top: 10px;
+    background-color: rgb(26 26 26);
+    border-radius: 15px;
+    color: white;
 }
 
-#information {
+#information-container {
     display: grid;
-    justify-items: center;
-    margin: 0 auto;
-    width: 80%;
 }
 
 #about-me {
@@ -47,22 +63,84 @@ body {
 h2 {
     font-size: 2em;
     margin: 0px;
-    text-align: center;
 }
 
-#display {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 50%;
-    margin: 20px auto 0 auto;
+#projects-container {
+    display: block;
 }
 
 .info {
     margin: 25px 0 25px 0;
-    border: 2px solid #355872;;
-    border-radius: 12px;
+    display: block;
+    width: 100%;
 }
 
-.info p {
+.info h2 {
+    text-align: left;
+    border-bottom: 2px solid black;
+}
+
+.skills p {
     margin: 10px 0;
+}
+
+html {
+  width: 1126px;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 auto;
+}
+
+.large-view {
+    display: block;
+}
+
+.small-view {
+    display: none;
+}
+
+#projects-container h2 {
+    border-bottom: 2px solid black;
+    display: block;
+}
+
+#projects {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.project {
+    width: 400px;
+    margin: 20px 50px;
+    background-color: rgb(26 26 26);
+    border-radius: 15px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited, a:link, a:hover, a:focus, a:active {
+    color: white;
+}
+
+.project-text {
+    padding: 0 10px;
+}
+
+
+@media screen and (max-width: 520px){
+   .large-view {
+        display: none;
+   } 
+
+   .small-view {
+        display: block;
+   }
+
+   #skills ul  {
+        grid-template-columns: repeat(2, 100px);
+   }
 }
