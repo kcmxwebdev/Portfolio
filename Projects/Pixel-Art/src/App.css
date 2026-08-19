@@ -1,10 +1,10 @@
 main {
-    flex: 1;
-    height: 100%;
+  flex: 1;
+  height: 100%;
 }
 
 #load-button {
-    display: none;
+  display: none;
 }
 
 ul {

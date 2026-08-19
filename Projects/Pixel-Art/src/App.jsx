@@ -328,26 +328,6 @@ function App() {
         <Canvas color={colorRef} width={width} height={height} undo={undo} historyIndex={historyIndexRef} increaseIndex={increaseIndex} size={size} action={actionRef} handleAction={handleAction} 
                 isMouseDown={isMouseDownRef} pos={posRef} setPos={setPosRef} undoStack={undoStackRef} redoStack={redoStackRef} visualRef={visualRef}>
         </Canvas>
-              <footer>
-        <h2>Attributions</h2>
-        <ul>
-          <li>
-            Real Mouse Canvas Position: <a href="https://stackoverflow.com/a/17130415" title="real mouse canvas position" target="_blank" rel="noopener noreferrer">user1693593</a>
-          </li>
-          <li>
-            Flood Fill Algorithm: <a href="https://en.wikipedia.org/wiki/Flood_fill" title="flood fill algorithm" target="_blank" rel="noopener noreferrer">Wikipedia</a>
-          </li>
-          <li>
-            Save Canvas: <a href="https://stackoverflow.com/a/68719454" title="save canvas" target="_blank" rel="noopener noreferrer">LeeLenalee</a>
-          </li>
-          <li>
-            Load Canvas: <a href="https://stackoverflow.com/a/10906961" title="load canvas" target="_blank" rel="noopener noreferrer">DerekR</a>
-          </li>
-          <li>
-            RGB to Hex: <a href="https://stackoverflow.com/a/5624139" title="rgb to hex conversion" target="_blank" rel="noopener noreferrer">Tim Down, casablanca</a>
-          </li>
-        </ul>
-      </footer>
       </main>
     </>
   )
