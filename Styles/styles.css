@@ -9,23 +9,6 @@ body {
     padding-top: 100px;
 }
 
-#education {
-    font-size: 18px;
-}
-
-#education p {
-    display: block;
-    margin-bottom: 0;
-    margin-top: 10px;
-}
-
-#graduation-date {
-    float: right;
-}
-
-#major {
-    display: block;
-}
 
 #skills {
     text-align: center;
@@ -60,6 +43,11 @@ body {
     font-size: 18px;
 }
 
+#contact {
+    display: flex;
+    justify-content: center;
+}
+
 h2 {
     font-size: 2em;
     margin: 0px;
@@ -91,13 +79,6 @@ html {
   margin: 0 auto;
 }
 
-.large-view {
-    display: block;
-}
-
-.small-view {
-    display: none;
-}
 
 #projects-container h2 {
     border-bottom: 2px solid black;
@@ -122,7 +103,7 @@ a {
     text-decoration: none;
 }
 
-a:visited, a:link, a:hover, a:focus, a:active {
+.project a:visited, .project a:link, .project a:hover, .project a:focus, .project a:active {
     color: white;
 }
 
@@ -131,15 +112,36 @@ a:visited, a:link, a:hover, a:focus, a:active {
 }
 
 
+.external-link {
+    margin: 0 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+#attributions-title {
+    text-align: center;
+}
+
+.attributions-heading {
+    border-bottom: 2px solid black;
+}
+
+.attributions-section ul {
+    padding-left: 0;
+}
+
+.attributions-section li {
+    list-style-type: none;
+}
+
+header a {
+    margin: 0 10px;
+}
+
 @media screen and (max-width: 520px){
-   .large-view {
-        display: none;
-   } 
-
-   .small-view {
-        display: block;
-   }
-
    #skills ul  {
         grid-template-columns: repeat(2, 100px);
    }
